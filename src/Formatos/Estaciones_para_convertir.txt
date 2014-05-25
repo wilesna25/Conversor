@@ -1,0 +1,20 @@
+
+  HEAD                      RED SISMICA NACIONAL                                    
+RESET TEST( 2)=  5.0                                                              
+RESET TEST( 3)=  0.2                                                              
+RESET TEST( 5)=  3.0                                                              
+RESET TEST( 6)=  1.0                                                              
+RESET TEST( 7)= -2.59                                                             
+RESET TEST( 8)=  2.82                                                             
+RESET TEST( 9)=  0.00                                                             
+                                                                                  
+  ALF2 452.37N 7520.51W4816  0.70                              
+  ALFZ 452.37N 7520.51W4816  0.70                                                 
+  ALFN 452.37N 7520.51W4816  0.70                                                 
+  ALFE 452.37N 7520.51W4816  0.70                                                 
+  AZU1 455.21N 7518.75W4517  0.63                                                 
+  BIS1 453.63N 7520.36W5077  0.77                                                 
+  BISZ 453.63N 7520.36W5077  0.77                                                 
+  BISN 453.63N 7520.36W5077  0.77                                                 
+  BISE 453.63N 7520.36W5077  0.77                                                 
+  BILA 452.56N 7514.82W3700  0.43                                                 
