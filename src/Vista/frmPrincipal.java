@@ -34,6 +34,7 @@ public class frmPrincipal extends javax.swing.JFrame {
         initComponents();
         setResizable(false);
         setLocationRelativeTo(null);
+        System.out.println("hola");
 //        aux = new AuxiliarFrm();
 //        cnv = new pnlConvertirCNV();
 //        carcaza = new pnlCarcaza();
