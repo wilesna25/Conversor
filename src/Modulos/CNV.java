@@ -29,7 +29,7 @@ public class CNV {
 //        CNV lector = new CNV();
         DecimalFormat df = new DecimalFormat("0.00");
         double aux = 4.816;
-        System.out.println("aux " + df.format(aux));
+        System.out.println("dir " + System.getProperty("user.dir"));
 //        String aux_line = "7520.51W4816";
 //        System.out.println("aux_line.substring(0, aux_line.length())" + aux_line.substring(8, 12));
 //        String ruta = "/root/Desktop/ConversorPrueba/src/Formatos/prueba.ipn";

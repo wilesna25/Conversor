@@ -20,6 +20,7 @@ public class frmPrincipal extends javax.swing.JFrame {
      */
     AuxiliarFrm aux;
     CardLayout card;
+    pnlShell shell;
     
 //    pnlConvertirCNV cnv;
 //    pnlCarcaza carcaza;
@@ -34,11 +35,6 @@ public class frmPrincipal extends javax.swing.JFrame {
         initComponents();
         setResizable(false);
         setLocationRelativeTo(null);
-        System.out.println("hola");
-//        aux = new AuxiliarFrm();
-//        cnv = new pnlConvertirCNV();
-//        carcaza = new pnlCarcaza();
-//        param = new pnlParameters();
         card = new CardLayout();
     }
 
@@ -214,8 +210,10 @@ public class frmPrincipal extends javax.swing.JFrame {
     }//GEN-LAST:event_jMenuItem5ActionPerformed
 
     private void jMenuItem7ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem7ActionPerformed
-        if (aux.ejectuarTomo() != 1) {
-            JOptionPane.showMessageDialog(null, "No fue posible ejecutar el tomo");
+        shell = new pnlShell();
+        limpiarPanel();
+        pintarPanel(shell);
+        {
         }    }//GEN-LAST:event_jMenuItem7ActionPerformed
 
     private void jMenuItem4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem4ActionPerformed

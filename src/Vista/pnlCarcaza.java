@@ -26,6 +26,8 @@ public class pnlCarcaza extends javax.swing.JPanel {
     public pnlCarcaza() {
         initComponents();
         model = new Model1p();
+        rut_mod = "";
+        rutSta =  "";
     }
 
     /**
@@ -255,7 +257,6 @@ public class pnlCarcaza extends javax.swing.JPanel {
             JOptionPane.showMessageDialog(null, "Porfavor cargue el archivo .sta que usará \n"
                     + " como referencia para la creación del archivo model1p");
         }
-//        Model1p
     }//GEN-LAST:event_bntCrearActionPerformed
 
     private void btnCargarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnCargarActionPerformed
