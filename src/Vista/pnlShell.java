@@ -158,8 +158,8 @@ public class pnlShell extends javax.swing.JPanel {
 
     private void txtComandoKeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_txtComandoKeyPressed
         if (evt.getKeyCode() == 10) {
-            txaRes.setText(ejecutar(txtComando.getText()));
-            txtComando.setText("");
+            txaRes.setText(ejecutar(getTxtComando().getText()));
+            getTxtComando().setText("");
         }
     }//GEN-LAST:event_txtComandoKeyPressed
 
@@ -173,4 +173,11 @@ public class pnlShell extends javax.swing.JPanel {
     private javax.swing.JTextArea txaRes;
     private javax.swing.JTextField txtComando;
     // End of variables declaration//GEN-END:variables
+
+    /**
+     * @return the txtComando
+     */
+    public javax.swing.JTextField getTxtComando() {
+        return txtComando;
+    }
 }

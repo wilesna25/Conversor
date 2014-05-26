@@ -61,7 +61,7 @@ public class Estaciones {
             String[] aux_line;
             String new_line = "";
             while ((line = bf.readLine()) != null) {
-                System.out.println("line + line.length() = " + line + line.length());
+                System.out.println("line + line.length() = " + line + ","+line.length());
                 if ((line.length() == 82 || line.length() == 63) && !line.contains("RESET")) {
                     aux_line = line.trim().replace("    ", "").split(" ");
                     if (aux_line.length == 5) {

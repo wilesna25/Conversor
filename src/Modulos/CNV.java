@@ -26,15 +26,9 @@ public class CNV {
     LinkedList<String> estaciones;
 
     public static void main(String[] args) {
-//        CNV lector = new CNV();
         DecimalFormat df = new DecimalFormat("0.00");
         double aux = 4.816;
         System.out.println("dir " + System.getProperty("user.dir"));
-//        String aux_line = "7520.51W4816";
-//        System.out.println("aux_line.substring(0, aux_line.length())" + aux_line.substring(8, 12));
-//        String ruta = "/root/Desktop/ConversorPrueba/src/Formatos/prueba.ipn";
-//        String ruta = "C:\\Users\\Rptrs\\Desktop\\ConversorPrueba\\src\\Formatos\\prueba.ipn";
-//        lector.leerIPN(ruta);
     }
 
     public void leerIPN(String ruta, String nombre_archivo) {
@@ -88,7 +82,6 @@ public class CNV {
                     sta_nom = estaciones.indexOf(aux[0].substring(0, 4).trim()) + "";
                     sta_ss = aux[2];
                     aux_sta += sta_nom + " " + sta_ss + " 1 0" + System.getProperty("line.separator");
-//                    System.out.println("aux_sta = " + aux_sta);
                 }
             }
             if (!aux_sta.equals("")) {
@@ -114,7 +107,6 @@ public class CNV {
             String[] aux_line;
             while ((line = bf.readLine()) != null) {
                 aux_line = line.trim().split(" ");
-//                System.out.println(aux_line[1]);
                 estaciones.add(aux_line[1]);
             }
         } catch (FileNotFoundException ex) {

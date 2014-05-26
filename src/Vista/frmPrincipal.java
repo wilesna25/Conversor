@@ -213,6 +213,7 @@ public class frmPrincipal extends javax.swing.JFrame {
         shell = new pnlShell();
         limpiarPanel();
         pintarPanel(shell);
+        shell.getTxtComando().setText("g77 -o tomo tomo.f");
         {
         }    }//GEN-LAST:event_jMenuItem7ActionPerformed
 

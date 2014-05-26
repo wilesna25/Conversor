@@ -187,7 +187,6 @@ public class pnlEstaciones extends javax.swing.JPanel {
         }
     }//GEN-LAST:event_btnConvertirActionPerformed
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
-        chooser = new JFileChooser();
         int returnVal = chooser.showOpenDialog(this);
         chooser.setCurrentDirectory(chooser.getCurrentDirectory());
         if (returnVal == JFileChooser.APPROVE_OPTION) {
