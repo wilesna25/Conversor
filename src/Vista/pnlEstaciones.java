@@ -5,6 +5,7 @@
 package Vista;
 
 import Modulos.Estaciones;
+import java.io.File;
 import javax.swing.JFileChooser;
 import javax.swing.JOptionPane;
 import javax.swing.filechooser.FileNameExtensionFilter;
@@ -20,9 +21,12 @@ public class pnlEstaciones extends javax.swing.JPanel {
      */
     Estaciones es;
     private String rutSta;
-    
+    JFileChooser chooser;
+
     public pnlEstaciones() {
         initComponents();
+        chooser = new JFileChooser();
+        chooser.setCurrentDirectory(new File(System.getProperty("user.dir")));
         es = new Estaciones();
     }
 
@@ -183,8 +187,9 @@ public class pnlEstaciones extends javax.swing.JPanel {
         }
     }//GEN-LAST:event_btnConvertirActionPerformed
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
-        JFileChooser chooser = new JFileChooser();
+        chooser = new JFileChooser();
         int returnVal = chooser.showOpenDialog(this);
+        chooser.setCurrentDirectory(chooser.getCurrentDirectory());
         if (returnVal == JFileChooser.APPROVE_OPTION) {
             String ruta = chooser.getSelectedFile().getAbsolutePath();
             es.setRuta(ruta);

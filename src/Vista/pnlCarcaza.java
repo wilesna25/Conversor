@@ -6,6 +6,7 @@
 package Vista;
 
 import Modulos.Model1p;
+import java.io.File;
 import javax.swing.JFileChooser;
 import javax.swing.JOptionPane;
 import javax.swing.filechooser.FileNameExtensionFilter;
@@ -22,12 +23,15 @@ public class pnlCarcaza extends javax.swing.JPanel {
     Model1p model;
     private String rut_mod;
     private String rutSta;
+    JFileChooser chooser;
 
     public pnlCarcaza() {
         initComponents();
         model = new Model1p();
+        chooser = new JFileChooser();
+        chooser.setCurrentDirectory(new File(System.getProperty("user.dir")));
         rut_mod = "";
-        rutSta =  "";
+        rutSta = "";
     }
 
     /**
@@ -260,10 +264,10 @@ public class pnlCarcaza extends javax.swing.JPanel {
     }//GEN-LAST:event_bntCrearActionPerformed
 
     private void btnCargarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnCargarActionPerformed
-        JFileChooser chooser = new JFileChooser();
         FileNameExtensionFilter filter = new FileNameExtensionFilter("STA", "STA");
         chooser.setFileFilter(filter);
         int returnVal = chooser.showOpenDialog(this);
+        chooser.setCurrentDirectory(chooser.getCurrentDirectory());
         if (returnVal == JFileChooser.APPROVE_OPTION) {
             String ruta_esta = chooser.getSelectedFile().getAbsolutePath();
             lblRut_sta.setText(ruta_esta);

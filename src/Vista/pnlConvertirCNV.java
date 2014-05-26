@@ -6,6 +6,7 @@
 package Vista;
 
 import Modulos.CNV;
+import java.io.File;
 import javax.swing.JFileChooser;
 import javax.swing.JOptionPane;
 import javax.swing.filechooser.FileNameExtensionFilter;
@@ -23,10 +24,13 @@ public class pnlConvertirCNV extends javax.swing.JPanel {
     private String rutIpn;
     private String rutSta;
     private String rutCnv;
-    
+    JFileChooser chooser;
+
     public pnlConvertirCNV() {
         initComponents();
         cnv = new CNV();
+        chooser = new JFileChooser();
+        chooser.setCurrentDirectory(new File(System.getProperty("user.dir")));
     }
 
     /**
@@ -206,8 +210,7 @@ public class pnlConvertirCNV extends javax.swing.JPanel {
     }// </editor-fold>//GEN-END:initComponents
 
     private void jButton4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton4ActionPerformed
-        JFileChooser chooser = new JFileChooser();
-        FileNameExtensionFilter filter = new FileNameExtensionFilter("IPN","IPN");
+        FileNameExtensionFilter filter = new FileNameExtensionFilter("IPN", "IPN");
         chooser.setFileFilter(filter);
         int returnVal = chooser.showOpenDialog(this);
         if (returnVal == JFileChooser.APPROVE_OPTION) {
@@ -230,10 +233,10 @@ public class pnlConvertirCNV extends javax.swing.JPanel {
     }//GEN-LAST:event_btnConvertirActionPerformed
 
     private void btnEstaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnEstaActionPerformed
-        JFileChooser chooser = new JFileChooser();
         FileNameExtensionFilter filter = new FileNameExtensionFilter("STA", "STA");
         chooser.setFileFilter(filter);
         int returnVal = chooser.showOpenDialog(this);
+        chooser.setCurrentDirectory(chooser.getCurrentDirectory());
         if (returnVal == JFileChooser.APPROVE_OPTION) {
             cnv.setEsta_ref(chooser.getSelectedFile().getAbsolutePath());
             lblRuta_sta.setText(chooser.getSelectedFile().getAbsolutePath());

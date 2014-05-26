@@ -29,8 +29,6 @@ public class Estaciones {
         Estaciones e = new Estaciones();
         String ruta = "C:\\Users\\Rptrs\\Documents\\Estaciones_para_convertir - copia.txt";
         e.convertirEstaciones(ruta, "prueba");
-//        e.prueba("  ALF2 452.37N 7520.51W4816  0.70     ");
-//        System.out.println(e.convertirUnidades("452.37"));
     }
 
     /*
@@ -63,6 +61,7 @@ public class Estaciones {
             String[] aux_line;
             String new_line = "";
             while ((line = bf.readLine()) != null) {
+                System.out.println("line + line.length() = " + line + line.length());
                 if ((line.length() == 82 || line.length() == 63) && !line.contains("RESET")) {
                     aux_line = line.trim().replace("    ", "").split(" ");
                     if (aux_line.length == 5) {

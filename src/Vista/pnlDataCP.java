@@ -5,6 +5,7 @@
 package Vista;
 
 import Modulos.DataCP;
+import java.io.File;
 import javax.swing.JFileChooser;
 import javax.swing.filechooser.FileNameExtensionFilter;
 
@@ -18,10 +19,13 @@ public class pnlDataCP extends javax.swing.JPanel {
      * Creates new form pnlDataCP
      */
     DataCP data;
+    JFileChooser chooser;
 
     public pnlDataCP() {
         initComponents();
         data = new DataCP();
+        chooser = new JFileChooser();
+        chooser.setCurrentDirectory(new File(System.getProperty("user.dir")));
     }
 
     /**
@@ -388,10 +392,10 @@ public class pnlDataCP extends javax.swing.JPanel {
     }//GEN-LAST:event_txtNHITCTActionPerformed
 
     private void btnCargarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnCargarActionPerformed
-        JFileChooser chooser = new JFileChooser();
         FileNameExtensionFilter filter = new FileNameExtensionFilter("DATACP", "DATACP");
         chooser.setFileFilter(filter);
         int returnVal = chooser.showOpenDialog(this);
+        chooser.setCurrentDirectory(chooser.getCurrentDirectory());
         if (returnVal == JFileChooser.APPROVE_OPTION) {
             data.setRuta(chooser.getSelectedFile().getAbsolutePath());
             lblRut_dat.setText(chooser.getSelectedFile().getAbsolutePath());
@@ -401,22 +405,21 @@ public class pnlDataCP extends javax.swing.JPanel {
             txtNITLOC.setText(arc_datacp[2]);
             txtRMS.setText(arc_datacp[3]);
             txtDVM.setText(arc_datacp[4]);
-             txtVDA.setText(arc_datacp[5]);
+            txtVDA.setText(arc_datacp[5]);
             txtNHITCT.setText(arc_datacp[6]);
             txtNITMAX.setText(arc_datacp[7]);
             txtRMSTOP.setText(arc_datacp[8]);
             txtSTEPL.setText(arc_datacp[9]);
             txtTLIM.setText(arc_datacp[10]);
             txtNITPB.setText(arc_datacp[11]);
-           
+
         }
     }//GEN-LAST:event_btnCargarActionPerformed
 
     private void btnGuardarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnGuardarActionPerformed
         String aux = txtNTFS.getText() + " " + txtNEQS.getText() + " "
                 + txtNITLOC.getText() + " " + txtRMS.getText() + " "
-                + txtDVM.getText() + " " +               txtVDA.getText() + " /"
-
+                + txtDVM.getText() + " " + txtVDA.getText() + " /"
                 + txtNHITCT.getText() + " " + txtNITMAX.getText() + " "
                 + txtRMSTOP.getText() + " " + txtSTEPL.getText()
                 + " " + txtTLIM.getText() + " " + txtNITPB.getText();

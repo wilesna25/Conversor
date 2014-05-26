@@ -6,6 +6,7 @@
 package Vista;
 
 import Modulos.Param;
+import java.io.File;
 import javax.swing.JFileChooser;
 import javax.swing.JOptionPane;
 import javax.swing.filechooser.FileNameExtensionFilter;
@@ -21,10 +22,13 @@ public class pnlParameters extends javax.swing.JPanel {
      */
     Param param;
     private String rutMod;
-    
+    JFileChooser chooser;
+
     public pnlParameters() {
         initComponents();
         param = new Param();
+        chooser = new JFileChooser();
+        chooser.setCurrentDirectory(new File(System.getProperty("user.dir")));
     }
 
     /**
@@ -387,15 +391,15 @@ public class pnlParameters extends javax.swing.JPanel {
     private void btnGuardarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnGuardarActionPerformed
         String valores = txtMEQ.getText() + " " + txtMST.getText() + " " + txtMAX.getText() + " " + txtMDT.getText() + " /"
                 + txtMD.getText() + " " + txtMU.getText() + " " + txtMG.getText() + " /"
-                + txtMKA.getText() + " " + txtMKB.getText() + " /" +txtMPA.getText() +" "+ txtMRA.getText()+" "+txtMHA.getText();
+                + txtMKA.getText() + " " + txtMKB.getText() + " /" + txtMPA.getText() + " " + txtMRA.getText() + " " + txtMHA.getText();
         param.escribirParam(valores);
     }//GEN-LAST:event_btnGuardarActionPerformed
 
     private void btnCargarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnCargarActionPerformed
-        JFileChooser chooser = new JFileChooser();
         FileNameExtensionFilter filter = new FileNameExtensionFilter("PARAM", "PARAM");
         chooser.setFileFilter(filter);
         int returnVal = chooser.showOpenDialog(this);
+        chooser.setCurrentDirectory(chooser.getCurrentDirectory());
         if (returnVal == JFileChooser.APPROVE_OPTION) {
             param.setRuta(chooser.getSelectedFile().getAbsolutePath());
             getLblPar().setText(chooser.getSelectedFile().getAbsolutePath());
@@ -422,10 +426,8 @@ public class pnlParameters extends javax.swing.JPanel {
     }//GEN-LAST:event_btnCargarActionPerformed
 
     private void btnCargar1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnCargar1ActionPerformed
-        JFileChooser chooser = new JFileChooser();
-//        FileNameExtensionFilter filter = new FileNameExtensionFilter("PARAM", "PARAM");
-//        chooser.setFileFilter(filter);
         int returnVal = chooser.showOpenDialog(this);
+        chooser.setCurrentDirectory(chooser.getCurrentDirectory());
         if (returnVal == JFileChooser.APPROVE_OPTION) {
             String inf = param.leerModel1p(chooser.getSelectedFile().getAbsolutePath());
             getLblMod().setText(chooser.getSelectedFile().getAbsolutePath());
@@ -444,7 +446,6 @@ public class pnlParameters extends javax.swing.JPanel {
             }
         }
     }//GEN-LAST:event_btnCargar1ActionPerformed
-
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton btnCargar;
     private javax.swing.JButton btnCargar1;
