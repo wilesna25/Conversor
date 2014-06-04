@@ -1,0 +1,315 @@
+MBRCheck, version 1.2.3
+(c) 2010, AD
+
+Command-line:			
+Windows Version:		Windows 7 Home Basic Edition
+Windows Information:		 (build 7600), 32-bit
+Base Board Manufacturer:	SAMSUNG ELECTRONICS CO., LTD.
+BIOS Manufacturer:		Phoenix Technologies Ltd.
+System Manufacturer:		SAMSUNG ELECTRONICS CO., LTD.
+System Product Name:		R430/R480/R440
+Logical Drives Mask:		0x000100fc
+
+Kernel Drivers (total 202):
+  0x8343D000 \SystemRoot\system32\ntkrnlpa.exe
+  0x83406000 \SystemRoot\system32\halmacpi.dll
+  0x80B84000 \SystemRoot\system32\kdcom.dll
+  0x83A36000 \SystemRoot\system32\mcupdate_GenuineIntel.dll
+  0x83AAE000 \SystemRoot\system32\PSHED.dll
+  0x83ABF000 \SystemRoot\system32\BOOTVID.dll
+  0x83AC7000 \SystemRoot\system32\CLFS.SYS
+  0x83B09000 \SystemRoot\system32\CI.dll
+  0x8B213000 \SystemRoot\system32\drivers\Wdf01000.sys
+  0x8B284000 \SystemRoot\system32\drivers\WDFLDR.SYS
+  0x8B292000 \SystemRoot\system32\DRIVERS\ACPI.sys
+  0x8B2DA000 \SystemRoot\system32\DRIVERS\WMILIB.SYS
+  0x8B2E3000 \SystemRoot\system32\DRIVERS\msisadrv.sys
+  0x8B2EB000 \SystemRoot\system32\DRIVERS\pci.sys
+  0x8B315000 \SystemRoot\system32\DRIVERS\vdrvroot.sys
+  0x8B320000 \SystemRoot\System32\drivers\partmgr.sys
+  0x8B331000 \SystemRoot\system32\DRIVERS\compbatt.sys
+  0x8B339000 \SystemRoot\system32\DRIVERS\BATTC.SYS
+  0x8B344000 \SystemRoot\system32\DRIVERS\volmgr.sys
+  0x8B354000 \SystemRoot\System32\drivers\volmgrx.sys
+  0x8B39F000 \SystemRoot\System32\drivers\mountmgr.sys
+  0x8B43D000 \SystemRoot\system32\DRIVERS\iaStor.sys
+  0x8B5F2000 \SystemRoot\system32\DRIVERS\atapi.sys
+  0x8B400000 \SystemRoot\system32\DRIVERS\ataport.SYS
+  0x8B423000 \SystemRoot\system32\DRIVERS\msahci.sys
+  0x8B42D000 \SystemRoot\system32\DRIVERS\PCIIDEX.SYS
+  0x8B3B5000 \SystemRoot\system32\DRIVERS\amdxata.sys
+  0x8B3BE000 \SystemRoot\system32\drivers\fltmgr.sys
+  0x8B200000 \SystemRoot\system32\drivers\fileinfo.sys
+  0x8B629000 \SystemRoot\System32\Drivers\Ntfs.sys
+  0x8B758000 \SystemRoot\System32\Drivers\msrpc.sys
+  0x8B783000 \SystemRoot\System32\Drivers\ksecdd.sys
+  0x8B796000 \SystemRoot\System32\Drivers\cng.sys
+  0x8B600000 \SystemRoot\System32\drivers\pcw.sys
+  0x8B60E000 \SystemRoot\System32\Drivers\Fs_Rec.sys
+  0x8B827000 \SystemRoot\system32\drivers\ndis.sys
+  0x8B8DE000 \SystemRoot\system32\drivers\NETIO.SYS
+  0x8B91C000 \SystemRoot\System32\Drivers\ksecpkg.sys
+  0x8B941000 \SystemRoot\system32\DRIVERS\volsnap.sys
+  0x8B980000 \SystemRoot\System32\Drivers\spldr.sys
+  0x8B988000 \SystemRoot\System32\drivers\rdyboost.sys
+  0x8B9B5000 \SystemRoot\System32\Drivers\mup.sys
+  0x8B9C5000 \SystemRoot\System32\drivers\hwpolicy.sys
+  0x8B9CD000 \SystemRoot\System32\DRIVERS\fvevol.sys
+  0x8B800000 \SystemRoot\system32\DRIVERS\disk.sys
+  0x83BB4000 \SystemRoot\system32\DRIVERS\CLASSPNP.SYS
+  0x9061E000 \SystemRoot\system32\DRIVERS\dtsoftbus01.sys
+  0x9065B000 \SystemRoot\system32\DRIVERS\cdrom.sys
+  0x9067A000 \SystemRoot\System32\Drivers\Null.SYS
+  0x90681000 \SystemRoot\System32\Drivers\Beep.SYS
+  0x90688000 \SystemRoot\System32\drivers\vga.sys
+  0x90694000 \SystemRoot\System32\drivers\VIDEOPRT.SYS
+  0x906B5000 \SystemRoot\System32\drivers\watchdog.sys
+  0x906C2000 \SystemRoot\System32\DRIVERS\RDPCDD.sys
+  0x906CA000 \SystemRoot\system32\drivers\rdpencdd.sys
+  0x906D2000 \SystemRoot\system32\drivers\rdprefmp.sys
+  0x906DA000 \SystemRoot\System32\Drivers\Msfs.SYS
+  0x906E5000 \SystemRoot\System32\Drivers\Npfs.SYS
+  0x93402000 \SystemRoot\System32\drivers\tcpip.sys
+  0x9354B000 \SystemRoot\System32\drivers\fwpkclnt.sys
+  0x9357C000 \SystemRoot\system32\DRIVERS\tdx.sys
+  0x93593000 \SystemRoot\system32\DRIVERS\TDI.SYS
+  0x9359E000 \SystemRoot\System32\DRIVERS\netbt.sys
+  0x906F3000 \SystemRoot\system32\drivers\afd.sys
+  0x935D0000 \SystemRoot\system32\drivers\ws2ifsl.sys
+  0x935D9000 \SystemRoot\system32\DRIVERS\wfplwf.sys
+  0x935E0000 \SystemRoot\system32\DRIVERS\pacer.sys
+  0x9074D000 \SystemRoot\system32\DRIVERS\vwififlt.sys
+  0x9075E000 \SystemRoot\system32\DRIVERS\netbios.sys
+  0x9076C000 \SystemRoot\system32\DRIVERS\wanarp.sys
+  0x9077F000 \SystemRoot\system32\DRIVERS\VBoxUSBMon.sys
+  0x9079E000 \SystemRoot\system32\DRIVERS\VBoxDrv.sys
+  0x907D4000 \SystemRoot\system32\DRIVERS\termdd.sys
+  0x907E4000 \??\C:\windows\system32\Drivers\SABI.sys
+  0x9362F000 \SystemRoot\system32\DRIVERS\rdbss.sys
+  0x93670000 \SystemRoot\system32\drivers\nsiproxy.sys
+  0x9367A000 \SystemRoot\system32\DRIVERS\mssmbios.sys
+  0x93684000 \SystemRoot\System32\drivers\discache.sys
+  0x93690000 \SystemRoot\System32\Drivers\dfsc.sys
+  0x936A8000 \SystemRoot\system32\DRIVERS\blbdrive.sys
+  0x936B6000 \SystemRoot\system32\DRIVERS\tunnel.sys
+  0x9881F000 \SystemRoot\system32\DRIVERS\igdkmd32.sys
+  0x990F8000 \SystemRoot\System32\drivers\dxgkrnl.sys
+  0x991AF000 \SystemRoot\System32\drivers\dxgmms1.sys
+  0x991E8000 \SystemRoot\system32\DRIVERS\HECI.sys
+  0x98800000 \SystemRoot\system32\drivers\usbehci.sys
+  0x936D7000 \SystemRoot\system32\drivers\USBPORT.SYS
+  0x93722000 \SystemRoot\system32\DRIVERS\HDAudBus.sys
+  0x96C28000 \SystemRoot\system32\DRIVERS\bcmwl6.sys
+  0x96EC2000 \SystemRoot\system32\DRIVERS\vwifibus.sys
+  0x96ECC000 \SystemRoot\system32\DRIVERS\yk62x86.sys
+  0x96F1D000 \SystemRoot\system32\DRIVERS\CmBatt.sys
+  0x96F21000 \SystemRoot\system32\DRIVERS\i8042prt.sys
+  0x96F39000 \SystemRoot\system32\DRIVERS\kbdclass.sys
+  0x96F46000 \SystemRoot\system32\DRIVERS\ETD.sys
+  0x96F65000 \SystemRoot\system32\DRIVERS\mouclass.sys
+  0x96F72000 \SystemRoot\system32\DRIVERS\Impcd.sys
+  0x96F93000 \SystemRoot\system32\DRIVERS\intelppm.sys
+  0x96FA5000 \SystemRoot\system32\DRIVERS\CompositeBus.sys
+  0x96FB2000 \SystemRoot\system32\DRIVERS\AgileVpn.sys
+  0x96FC4000 \SystemRoot\system32\DRIVERS\rasl2tp.sys
+  0x96FDC000 \SystemRoot\system32\DRIVERS\ndistapi.sys
+  0x96C00000 \SystemRoot\system32\DRIVERS\ndiswan.sys
+  0x96FE7000 \SystemRoot\system32\DRIVERS\raspppoe.sys
+  0x93741000 \SystemRoot\system32\DRIVERS\raspptp.sys
+  0x93758000 \SystemRoot\system32\DRIVERS\rassstp.sys
+  0x9376F000 \SystemRoot\system32\DRIVERS\VBoxNetAdp.sys
+  0x9378F000 \SystemRoot\system32\DRIVERS\VBoxNetFlt.sys
+  0x96C22000 \SystemRoot\system32\DRIVERS\swenum.sys
+  0x937B2000 \SystemRoot\system32\DRIVERS\ks.sys
+  0x9880F000 \SystemRoot\system32\DRIVERS\umbus.sys
+  0x937E6000 \SystemRoot\system32\DRIVERS\ew_jubusenum.sys
+  0x9663A000 \SystemRoot\system32\DRIVERS\usbhub.sys
+  0x9667E000 \SystemRoot\System32\Drivers\NDProxy.SYS
+  0x97A18000 \SystemRoot\system32\drivers\RTKVHDA.sys
+  0x97CEE000 \SystemRoot\system32\drivers\portcls.sys
+  0x97D1D000 \SystemRoot\system32\drivers\drmk.sys
+  0x97D36000 \SystemRoot\system32\DRIVERS\IntcDAud.sys
+  0x97D74000 \SystemRoot\System32\Drivers\crashdmp.sys
+  0x9020A000 \SystemRoot\System32\Drivers\dump_iaStor.sys
+  0x903BF000 \SystemRoot\System32\Drivers\dump_dumpfve.sys
+  0x99810000 \SystemRoot\System32\win32k.sys
+  0x903D0000 \SystemRoot\System32\drivers\Dxapi.sys
+  0x903DA000 \SystemRoot\system32\DRIVERS\monitor.sys
+  0x903E5000 \SystemRoot\system32\DRIVERS\usbccgp.sys
+  0x903FC000 \SystemRoot\system32\DRIVERS\USBD.SYS
+  0x97D81000 \SystemRoot\System32\Drivers\usbvideo.sys
+  0x99A70000 \SystemRoot\System32\TSDDD.dll
+  0x99AA0000 \SystemRoot\System32\cdd.dll
+  0x8262D000 \SystemRoot\system32\drivers\btwampfl.sys
+  0x82856000 \SystemRoot\System32\Drivers\BTHUSB.sys
+  0x82868000 \SystemRoot\System32\Drivers\bthport.sys
+  0x828CC000 \SystemRoot\system32\DRIVERS\rfcomm.sys
+  0x828F0000 \SystemRoot\system32\drivers\BthEnum.sys
+  0x828FD000 \SystemRoot\system32\DRIVERS\bthpan.sys
+  0x82918000 \SystemRoot\system32\drivers\btwavdt.sys
+  0x9668F000 \SystemRoot\system32\drivers\btwaudio.sys
+  0x8298D000 \SystemRoot\system32\DRIVERS\btwl2cap.sys
+  0x82999000 \SystemRoot\system32\DRIVERS\btwrchid.sys
+  0x8299C000 \SystemRoot\system32\DRIVERS\HIDCLASS.SYS
+  0x829AF000 \SystemRoot\system32\DRIVERS\HIDPARSE.SYS
+  0x829B6000 \SystemRoot\system32\drivers\luafv.sys
+  0x829D1000 \SystemRoot\system32\DRIVERS\Sftvollh.sys
+  0x829DA000 \SystemRoot\system32\drivers\WudfPf.sys
+  0x82600000 \SystemRoot\system32\DRIVERS\lltdio.sys
+  0x97DA5000 \SystemRoot\system32\DRIVERS\nwifi.sys
+  0x82610000 \SystemRoot\system32\DRIVERS\ndisuio.sys
+  0x97DEB000 \SystemRoot\system32\DRIVERS\rspndr.sys
+  0x96711000 \SystemRoot\system32\drivers\HTTP.sys
+  0x96796000 \SystemRoot\system32\DRIVERS\bowser.sys
+  0x97A00000 \SystemRoot\System32\drivers\mpsdrv.sys
+  0x967AF000 \SystemRoot\system32\DRIVERS\mrxsmb.sys
+  0x9BC0D000 \SystemRoot\system32\DRIVERS\mrxsmb10.sys
+  0x9BC48000 \SystemRoot\system32\DRIVERS\mrxsmb20.sys
+  0x9BC7B000 \SystemRoot\system32\drivers\peauth.sys
+  0x9BD12000 \SystemRoot\System32\Drivers\secdrv.SYS
+  0x9BD1C000 \SystemRoot\system32\DRIVERS\Sftfslh.sys
+  0x9BDA8000 \SystemRoot\system32\DRIVERS\Sftplaylh.sys
+  0x9BDDE000 \SystemRoot\System32\DRIVERS\srvnet.sys
+  0x9BC00000 \SystemRoot\System32\drivers\tcpipreg.sys
+  0xB3637000 \SystemRoot\System32\DRIVERS\srv2.sys
+  0xB3686000 \SystemRoot\System32\DRIVERS\srv.sys
+  0xB36D8000 \SystemRoot\system32\DRIVERS\Sftredirlh.sys
+  0xB374B000 \SystemRoot\system32\DRIVERS\asyncmac.sys
+  0xB3754000 \SystemRoot\system32\DRIVERS\USBSTOR.SYS
+  0xB376B000 \SystemRoot\system32\DRIVERS\cdfs.sys
+  0x77970000 \Windows\System32\ntdll.dll
+  0x479E0000 \Windows\System32\smss.exe
+  0x77BB0000 \Windows\System32\apisetschema.dll
+  0x00570000 \Windows\System32\autochk.exe
+  0x77B00000 \Windows\System32\usp10.dll
+  0x778F0000 \Windows\System32\comdlg32.dll
+  0x77AB0000 \Windows\System32\gdi32.dll
+  0x778D0000 \Windows\System32\imm32.dll
+  0x778B0000 \Windows\System32\sechost.dll
+  0x77800000 \Windows\System32\rpcrt4.dll
+  0x77600000 \Windows\System32\iertutil.dll
+  0x77500000 \Windows\System32\wininet.dll
+  0x774F0000 \Windows\System32\psapi.dll
+  0x77440000 \Windows\System32\msvcrt.dll
+  0x773E0000 \Windows\System32\shlwapi.dll
+  0x773D0000 \Windows\System32\nsi.dll
+  0x773A0000 \Windows\System32\imagehlp.dll
+  0x77310000 \Windows\System32\oleaut32.dll
+  0x77280000 \Windows\System32\clbcatq.dll
+  0x76630000 \Windows\System32\shell32.dll
+  0x76590000 \Windows\System32\advapi32.dll
+  0x76530000 \Windows\System32\difxapi.dll
+  0x76520000 \Windows\System32\lpk.dll
+  0x764D0000 \Windows\System32\Wldap32.dll
+  0x764C0000 \Windows\System32\normaliz.dll
+  0x763F0000 \Windows\System32\user32.dll
+  0x76310000 \Windows\System32\kernel32.dll
+  0x762D0000 \Windows\System32\ws2_32.dll
+  0x76170000 \Windows\System32\ole32.dll
+  0x76030000 \Windows\System32\urlmon.dll
+  0x75F60000 \Windows\System32\msctf.dll
+  0x75DC0000 \Windows\System32\setupapi.dll
+  0x75D90000 \Windows\System32\wintrust.dll
+  0x75D00000 \Windows\System32\comctl32.dll
+  0x75CD0000 \Windows\System32\cfgmgr32.dll
+  0x75CB0000 \Windows\System32\devobj.dll
+
+Processes (total 77):
+       0 System Idle Process
+       4 System
+     312 C:\Windows\System32\smss.exe
+     468 csrss.exe
+     524 C:\Windows\System32\wininit.exe
+     532 csrss.exe
+     572 C:\Windows\System32\services.exe
+     604 C:\Windows\System32\lsass.exe
+     612 C:\Windows\System32\lsm.exe
+     696 C:\Windows\System32\winlogon.exe
+     760 C:\Windows\System32\svchost.exe
+     836 C:\Windows\System32\svchost.exe
+     924 C:\Windows\System32\svchost.exe
+     972 C:\Windows\System32\svchost.exe
+    1008 C:\Windows\System32\svchost.exe
+    1084 C:\Windows\System32\audiodg.exe
+    1124 C:\Windows\System32\svchost.exe
+    1248 C:\Windows\System32\svchost.exe
+    1356 C:\Windows\System32\svchost.exe
+    1432 C:\Windows\System32\wlanext.exe
+    1440 C:\Windows\System32\conhost.exe
+    1556 C:\Windows\System32\spoolsv.exe
+    1688 C:\Program Files\Common Files\Adobe\ARM\1.0\armsvc.exe
+    1728 C:\Program Files\WIDCOMM\Bluetooth Software\btwdins.exe
+    1772 C:\Program Files\Intel\Intel(R) Management Engine Components\LMS\LMS.exe
+    1832 C:\Program Files\Symantec\Norton Online Backup\NOBuAgent.exe
+    1916 C:\Windows\System32\Rezip.exe
+    1948 C:\Program Files\CyberLink\Shared files\RichVideo.exe
+    1980 C:\Program Files\Microsoft\Search Enhancement Pack\SeaPort\SeaPort.exe
+     368 C:\Windows\System32\taskhost.exe
+    2072 C:\Program Files\Microsoft Application Virtualization Client\sftvsa.exe
+    2116 C:\Windows\System32\dwm.exe
+    2152 C:\Windows\explorer.exe
+    2180 C:\Windows\System32\svchost.exe
+    2300 C:\Program Files\TeamViewer\Version6\TeamViewer_Service.exe
+    2340 C:\Windows\System32\svchost.exe
+    2364 C:\Program Files\Common Files\microsoft shared\Windows Live\WLIDSVC.EXE
+    2408 C:\Program Files\Microsoft Application Virtualization Client\sftlist.exe
+    2524 C:\Program Files\Common Files\microsoft shared\Windows Live\WLIDSVCM.EXE
+    2800 WmiPrvSE.exe
+    2956 C:\Program Files\Realtek\Audio\HDA\RtHDVCpl.exe
+    2976 C:\Program Files\CyberLink\Power2Go\CLMLSvc.exe
+    3072 C:\Windows\System32\igfxtray.exe
+    3084 C:\Windows\System32\hkcmd.exe
+    3092 C:\Windows\System32\igfxpers.exe
+    3104 C:\Program Files\Elantech\ETDCtrl.exe
+    3204 C:\Program Files\Common Files\Adobe\ARM\1.0\AdobeARM.exe
+    3228 C:\Program Files\Common Files\Java\Java Update\jusched.exe
+    3536 C:\Program Files\Microsoft Office\Office14\MSOSYNC.EXE
+    3552 C:\Program Files\Common Files\microsoft shared\Virtualization Handler\CVHSVC.EXE
+    3564 C:\Program Files\Skype\Phone\Skype.exe
+    3580 C:\Users\c\AppData\Local\Temp\oldies\service.exe
+    3656 C:\Windows\System32\taskeng.exe
+    3704 C:\Program Files\Samsung\Samsung Support Center\SSCKbdHk.exe
+    3764 C:\Program Files\Samsung\Samsung Recovery Solution 4\WCScheduler.exe
+    3860 C:\Program Files\Samsung\Easy Display Manager\dmhkcore.exe
+    4088 C:\Program Files\Common Files\microsoft shared\OfficeSoftwareProtectionPlatform\OSPPSVC.EXE
+    2396 C:\Windows\System32\svchost.exe
+    1636 C:\Windows\System32\svchost.exe
+    2916 C:\Windows\servicing\TrustedInstaller.exe
+    3060 C:\Windows\System32\svchost.exe
+    3328 C:\Program Files\Elantech\ETDCtrlHelper.exe
+    2024 WmiPrvSE.exe
+    4204 C:\Program Files\WIDCOMM\Bluetooth Software\BTTray.exe
+    4316 C:\Windows\Microsoft.NET\Framework\v2.0.50727\vbc.exe
+    4324 C:\Windows\System32\conhost.exe
+    4860 C:\Windows\System32\igfxext.exe
+    4888 C:\Windows\System32\igfxsrvc.exe
+    6004 C:\Windows\System32\regsvr32.exe
+    4264 F:\PROGRAMAS\DAEMON Tools Lite\DTLite.exe
+    3528 C:\Program Files\Intel\Intel(R) Management Engine Components\UNS\UNS.exe
+    2748 G:\HBCD\HBCDMENU.EXE
+    5096 C:\Program Files\Samsung\EasySpeedUpManager\EasySpeedUpManager.exe
+    6024 C:\Windows\System32\consent.exe
+    3040 C:\PROGRA~1\Samsung\SAMSUN~2\SUPNOT~1.EXE
+    4956 C:\Users\c\AppData\Local\Temp\HBCD\MBRCheck.exe
+    3304 C:\Windows\System32\conhost.exe
+
+\\.\C: --> \\.\PhysicalDrive0 at offset 0x00000005`06500000  (NTFS)
+\\.\D: --> \\.\PhysicalDrive0 at offset 0x00000027`c5f00000  (NTFS)
+\\.\F: --> \\.\PhysicalDrive1 at offset 0x00000000`00008000  (NTFS)
+\\.\Q: -->  error 5
+
+PhysicalDrive0 Model Number: SAMSUNGHM321HI, Rev: 2AJ10002
+PhysicalDrive1 Model Number: SamsungM3 Portable, Rev: 
+
+      Size  Device Name          MBR Status
+  --------------------------------------------
+    298 GB  \\.\PhysicalDrive0   Unknown MBR code
+            SHA1: F5C09ACABD4A5370BDD907E8EDFE0C1DA0F9D3F5
+    931 GB  \\.\PhysicalDrive1   RE: Unknown MBR code
+            SHA1: 5BF5B6A463F9AB1ADEA9814C596F474BB14D2F2A
+
+
+Found non-standard or infected MBR.
+Enter 'Y' and hit ENTER for more options, or 'N' to exit: 
+
+Done!
