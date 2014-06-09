@@ -1,5 +1,6 @@
 formato ipn
 aammdd hhmm ss.ss la  lag   lo  log    pro    mag  num          rms
+980117 0033 29.22 04 31.58-075-23.46   1.76   1.49 11 178  4.0 0.14  4.4  1.4 C1 07 01170033.MVT M ###
 090820 1650 27.99  4 28.68 -75-23.35   2.35   1.42 17  94  1.5 0.08  0.2  0.4 B1 10 08201650.MVT M ccz
 esta P w aammddhhmmss.ss       ss.ss S w
 CIMAIPC0 090820165028.65       29.12 S 2                                 33.4

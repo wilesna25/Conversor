@@ -54,6 +54,7 @@ public class CNV {
             BufferedReader bufferedReader = new BufferedReader(fileReader);
             String line;
             String[] aux;
+            char[] tochar;
             while ((line = bufferedReader.readLine()) != null) {
                 if (line.length() == 102) { // Fila que contiene información general 
                     if (!aux_sta.equals("")) {
@@ -61,20 +62,21 @@ public class CNV {
                         escribirCNV(aux_sta, nombre_archivo);
                         aux_sta = "";
                     }
-                    aux = line.replace("   ", "  ").replace("  ", " ").split(" ");
-                    aammdd = aux[0];//+ "" + aux[0].substring(1)+""+aux[0].substring(2) +"" +aux[0].substring(3)+""+
-                    hhmm = aux[1];
-                    ssss = aux[2];
-                    lag = aux[4];
-                    log = aux[5].substring(3, 9);
-                    pro = aux[6];
-                    mag = aux[7];
-                    num = aux[8];
-                    rms = aux[11];
+                    tochar = line.trim().toCharArray();
+                    aammdd = tochar[0] + "" + tochar[1] + "" + tochar[2] + "" + tochar[3] + "" + tochar[4] + "" + tochar[5] + "";
+                    hhmm = tochar[7] + "" + tochar[8] + "" + tochar[9] + "" + tochar[10] + "";
+                    ssss = tochar[12] + "" + tochar[13] + "" + tochar[14] + "" + tochar[15] + "" + tochar[16] + "";
+                    lag = tochar[21] + "" + tochar[22] + "" + tochar[23] + "" + tochar[24] + "" + tochar[25] + "";
+                    log = tochar[30] + "" + tochar[31] + "" + tochar[32] + "" + tochar[33] + "" + tochar[34] + "" + tochar[35] + "";
+                    pro = tochar[39] + "" + tochar[40] + "" + tochar[41] + "" + tochar[42] + "";
+                    mag = tochar[46] + "" + tochar[47] + "" + tochar[48] + "" + tochar[49] + "";
+                    num = tochar[51] + "" + tochar[52] + "";
+                    rms = tochar[63] + "" + tochar[64] + "" + tochar[65] + "" + tochar[66] + "";
                     ipn += aammdd + " " + hhmm + " " + ssss + " " + err + " "
                             + lag + " " + erlag + " " + log + " " + errlo + " " + pro
                             + " " + num + " " + mag + " " + rms + System.getProperty("line.separator");
                     escribirCNV(ipn, nombre_archivo);
+                    System.out.println("line = " + line);
                     System.out.println("ipn = " + ipn);
                     ipn = "";
                 } else if (line.length() == 77) {
@@ -153,7 +155,7 @@ public class CNV {
             if (text.length() == 67) {
                 out.write(text);
             } else {
-                aux_sta = text.split("\n");
+                aux_sta = text.split(System.getProperty("line.separator"));
                 for (String sta : aux_sta) {
                     cont_sta++;
                     if (line_sta.equals("")) {
@@ -174,6 +176,7 @@ public class CNV {
                     }
                     out.write(line_sta);
                 }
+                out.write(System.getProperty("line.separator"));
             }
             out.close();
         } catch (IOException ex) {
