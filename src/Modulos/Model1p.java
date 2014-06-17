@@ -136,7 +136,7 @@ public class Model1p {
         double fin = Double.parseDouble(ran_fin);
         double incremento = Double.parseDouble(inc);
         int cont = 1;
-        cad += completarEspaciosIzquierda(df.format(Double.parseDouble(completarCerosDecimales(inicio - (incremento * 3) + "", 3))) + "", 7);
+        cad += completarEspaciosIzquierda(df.format(Double.parseDouble(completarCerosDecimales(inicio - (incremento * 5) + "", 3))) + "", 7);
         for (Double i = inicio; i < fin; i += incremento) {
             cad += completarEspaciosIzquierda(df.format(Double.parseDouble(completarCerosDecimales(i + "", 3))) + "", 7);
             cont++;
@@ -147,7 +147,7 @@ public class Model1p {
                 flag = true;
             }
         }
-        cad += completarEspaciosIzquierda(df.format(fin + (incremento * 2.5)) + "", 7);
+        cad += completarEspaciosIzquierda(df.format(fin + (incremento * 5)) + "", 7);
         cont++;
         cad += System.getProperty("line.separator");
         return cad.replace(",", ".");

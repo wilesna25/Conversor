@@ -6,6 +6,10 @@ package Vista;
 
 import Modulos.AuxiliarFrm;
 import java.awt.CardLayout;
+import java.io.FileWriter;
+import java.io.IOException;
+import java.util.logging.Level;
+import java.util.logging.Logger;
 import javax.swing.JOptionPane;
 import javax.swing.JPanel;
 
@@ -16,21 +20,20 @@ import javax.swing.JPanel;
 public class frmPrincipal extends javax.swing.JFrame {
 
     /**
-     * Instancia los paneles que se utilizarán en el cardlayout del JFrame frmPrinicipal
+     * Instancia los paneles que se utilizarán en el cardlayout del JFrame
+     * frmPrinicipal
      */
-    AuxiliarFrm aux;
     CardLayout card;
     pnlShell shell;
-    
 //    pnlConvertirCNV cnv;
 //    pnlCarcaza carcaza;
 //    pnlParameters param;
 /*
-  * Declaración de variables que almacenarán la ruta en memoria de los archivos creados
-  *  o cargados 
-  */
-    String rut_cnv,rut_dat,rut_sta,rut_mod,rut_par;
-    
+     * Declaración de variables que almacenarán la ruta en memoria de los archivos creados
+     *  o cargados 
+     */
+    String rut_cnv, rut_dat, rut_sta, rut_mod, rut_par;
+
     public frmPrincipal() {
         initComponents();
         setResizable(false);
@@ -185,7 +188,7 @@ public class frmPrincipal extends javax.swing.JFrame {
     }//GEN-LAST:event_jMenuItem1ActionPerformed
 
     private void jMenuItem6ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem6ActionPerformed
-       limpiarPanel();
+        limpiarPanel();
         getPnlContainer().add(getPnlDataCP1());
         getPnlContainer().repaint();
         pnlContainer.revalidate();    }//GEN-LAST:event_jMenuItem6ActionPerformed
@@ -193,7 +196,7 @@ public class frmPrincipal extends javax.swing.JFrame {
     private void jMenuItem2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem2ActionPerformed
         limpiarPanel();
         pintarPanel(getPnlEstaciones1());
-        
+
     }//GEN-LAST:event_jMenuItem2ActionPerformed
 
     private void jMenuItem3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem3ActionPerformed
@@ -204,16 +207,44 @@ public class frmPrincipal extends javax.swing.JFrame {
     private void jMenuItem5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem5ActionPerformed
         limpiarPanel();
         pintarPanel(getPnlParameters1());
-        if(!getPnlCarcaza1().getRut_mod().equals("")){
+        if (!getPnlCarcaza1().getRut_mod().equals("")) {
             getPnlParameters1().getLblMod().setText(getPnlCarcaza1().getRut_mod());
         }
     }//GEN-LAST:event_jMenuItem5ActionPerformed
 
     private void jMenuItem7ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem7ActionPerformed
-        shell = new pnlShell();
-        limpiarPanel();
-        pintarPanel(shell);
-        shell.getTxtComando().setText("g77 -o tomo tomo.f");
+        String tom = "";
+        String hyp;
+        String res;
+//        do {
+            tom = JOptionPane.showInputDialog(null, "Determine Tomography \n "
+                    + "P-wave (1) or S-wave (2)");
+//            System.out.println("tom = " + tom);
+            
+//        } while (!tom.trim().equals("1") || !tom.equals("2"));
+//        do {
+            hyp = JOptionPane.showInputDialog(null, "Relocate hypocenters \n "
+                    + "Yes (1) or Not (0)");
+//        } while (!hyp.equals("1") || !hyp.equals("0"));
+//        do {
+            res = JOptionPane.showInputDialog(null, "See every residual in the screen \n "
+                    + "Yes (1) or Not (0)");
+//        } while (!res.equals("1") || !res.equals("0"));
+        try {
+            shell = new pnlShell();
+            limpiarPanel();
+            pintarPanel(shell);
+            shell.ejecutar("g77 -o tomo tomo.f");
+            FileWriter writer = new FileWriter("input_tomo_exe");
+            writer.write(tom + System.getProperty("line.separator") + hyp + System.getProperty("line.separator")
+                    + res);
+            writer.close();
+            shell.getTxtComando().setText("tomo.exe < input_tomo_exe < output_tomo_exe");
+        } catch (IOException ex) {
+            Logger.getLogger(frmPrincipal.class.getName()).log(Level.SEVERE, null, ex);
+        }
+
+
         {
         }    }//GEN-LAST:event_jMenuItem7ActionPerformed
 
